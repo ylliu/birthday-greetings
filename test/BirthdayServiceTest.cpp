@@ -25,6 +25,7 @@ TEST_F(BirthdayServiceTest, will_send_greetings_when_its_somebodys_birthday_usin
     //when
     BirthdayService birthdayService(employeesRepositorySub, new MailSender());
     birthdayService.sendGreetings(new XDate("2021/12/08"));
+    //then
     //断言log
     std::string line;
     std::ifstream greetings("greetings.json");
