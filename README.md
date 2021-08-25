@@ -15,11 +15,13 @@ BOOST_ROOT = D:/DevelopmentEnviroment/boost_1_77_0
 BOOST_INCLUDEDIR = D:/DevelopmentEnviroment/boost_1_77_0  
 BOOST_LIBRARYDIR = D:/DevelopmentEnviroment/boost_1_77_0/lib64-msvc-14.1   
 
-### Init database postergresql
+### Init postergresql
 Create a database named postgres,and then create a table named employee,and then set fields,the fields are
 id,last_name,first_name,date_of_birth and email.
-The connect info is 
+The connect info is:    
 ` "postgresql://postgres@localhost?port=5432&dbname=postgres&user=postgres&password=123456";`
+
+The sql commands   
 ```sql
 -- Table: public.employee
 
