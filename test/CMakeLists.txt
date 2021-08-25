@@ -1,6 +1,6 @@
 project(birthday_greeting_test)
 
-set(gtest_SOURCE_DIR C:/Users/youlong/CLionProjects/BirthdayGreeting/lib/googletest/googletest)
+set(gtest_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../lib/googletest/googletest)
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 include_directories(${gmock_SOURCE_DIR}/include ${gmock_SOURCE_DIR})
@@ -8,7 +8,7 @@ link_directories(../lib)
 
 enable_testing()
 
-set(PostgreSQL_DIR "C:/Users/youlong/CLionProjects/BirthdayGreeting/PostgreSQL13")
+set(PostgreSQL_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../PostgreSQL13")
 set(PostgreSQL_INCLUDE_DIRS "${PostgreSQL_DIR}/include")
 # Include the found INCLUDE directory
 set(PostgreSQL_LIBRARIES "${PostgreSQL_DIR}/lib/libpq.lib")

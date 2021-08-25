@@ -14,5 +14,6 @@ void BirthdayService::sendGreetings(XDate *xDate) {
     for (Employee employee:employees) {
         greetingsSender->sendGreetingsTo(employee);
     }
+//    std::for_each(employees.begin(),employees.end(),[&](Employee e){greetingsSender->sendGreetingsTo(e);});
 }
 
